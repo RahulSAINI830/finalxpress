@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Line Awesome CDN Link -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style3.css" />
+    <link rel="shortcut icon" href="./img2/favicon-32x32.png" type="image/x-icon">
+    <script>
+        function updateLink(value) {
+            if (value === "fr") {
+                document
+                    .getElementById("Create Account")
+                    .setAttribute(
+                        "onclick",
+                        "location.href='clientregistrationform.html'"
+                    );
+            } else {
+                document
+                    .getElementById("Create Account")
+                    .setAttribute(
+                        "onclick",
+                        "location.href='expertregistrationform.html'"
+                    );
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="body_">
+        <div class="main-container">
+            <div class="media_">
+                <img src="./img2/GET JOB PROMOTION 1.png" alt="img" />
+                <p>
+                    Lets embark on a journey of making <br />
+                    informed and better decisions together.
+                </p>
+            </div>
+            <div class="creat_">
+                <div class="radio-buttons">
+                    <h2>I identify myself as a:</h2>
+                    <label class="custom-radio">
+                        <input type="radio" name="radio" value="fr" onclick="updateLink(this.value)" />
+                        <span class="radio-btn"><i class="las la-check"></i>
+                            <div class="hobbies-icon">
+                                <img src="./img2/Client.png" alt="" />
+                                <h3>Client</h3>
+                            </div>
+                        </span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="radio" value="ex" onclick="updateLink(this.value)" />
+                        <span class="radio-btn"><i class="las la-check"></i>
+                            <div class="hobbies-icon">
+                                <img src="./img2/expert.png" alt="" />
+                                <h3>Expert</h3>
+                            </div>
+                        </span>
+                    </label>
+                  
+                </div>
+                <div class="foot"><input id="Create Account" type="button" value="Create Account">
+                    <!-- <p>Alredy have account <a href=""> Log in</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="./img2/Waves2.png" alt="" class="body_img" />
+    </div>
+</body>
+
+</html>

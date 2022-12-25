@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="./css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/user-tie?s=solid&f=classic">
+    <link rel="shortcut icon" href="./img2/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="clint_">
+        <a href="./index.html"><img src="./img2/logo (1).png" alt="img"></a>
+    </div>
+    <div class="clf_">
+        
+
+        <div class="container">
+            <div class="title">Client Registration Process</div>
+            <div class="content">
+                <form action="clint.php" method="post">
+                    <div class="loda">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Prefix</span>
+                                <select name="Prefix" id="prifix" class="prefix_">
+                                    <option disabled selected>Select prifix</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                </select>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">First Name</span>
+                                <input type="text" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Last Name</span>
+                                <input type="text" name="lastname" class="icon" placeholder="Last Name"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Company Name</span>
+                            <input type="text" name="companyname" placeholder="Enter your Company Name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Website</span>
+                            <input type="text" name="website" placeholder="Enter your Website" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Country</span>
+                            <input type="text" name="country" placeholder="Enter your Country" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">City</span>
+                            <input type="text" name="city" placeholder="Enter your City" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="text" name="mobilenumber" placeholder="Enter your number" required>
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="i_m_looking_for" value="surveys" id="dot-2">
+                        <input type="radio" name="i_m_looking_for" value="On-Demant Expert visits" id="dot-3">
+                        <input type="radio" name="i_m_looking_for" value="Customized Reports" id="dot-4">
+                        <input type="radio" name="i_m_looking_for" value="Expert Consultation" id="dot-1">
+                        <span class="gender-title">I am looking for</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Expert Consultation</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">surveys</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">On-Demant Expert visits</span>
+                            </label>
+                            <label for="dot-4">
+                                <span class="dot four"></span>
+                                <span class="gender">Customized Reports</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- <div class="gender-details1">
+                        <input type="radio" name="gender" value="Houre" id="Houre">
+                        <input type="radio" name="gender" value="Few-weeks" id="Few-weeks">
+                        <input type="radio" name="gender"  value="Few-montsh" id="Few-months">
+                        <input type="radio" name="gender" value="permanents" id="permanents">
+                        <span class="gender-title1">You require The Xpress Views for?</span>
+                        <div class="category1">
+                            <label for="Houre">
+                                <span class="dot five"></span>
+                                <span class="gender">Hour</span>
+                            </label>
+                            <label for="Few-weeks">
+                                <span class="dot six"></span>
+                                <span class="gender">Few weeks</span>
+                            </label>
+                            <label for="Few-months">
+                                <span class="dot seven"></span>
+                                <span class="gender">Few months</span>
+                            </label>
+                            <label for="permanents">
+                                <span class="dot eight"></span>
+                                <span class="gender">permanents</span>
+                            </label>
+                        </div> -->
+
+                    <div class="user-details1">
+                        <div class="input-box1">
+                            <span class="details">A brief project description</span>
+                            <input type="text" name="project_description" placeholder="Write here..." required>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Industrty Sector</span>
+                            <input type="text" name="Industry_Sector" placeholder="Industry Sector" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Tentative Budget</span>
+                            <input type="text" name="Budget" placeholder="Tentative Budget" required>
+                        </div>
+                    </div>
+                    <div class="user-details1">
+                        <div class="input-box1">
+                            <span class="details">Sector to which the Project Belongs To
+                            </span>
+                            <input type="text" name="Where_to" placeholder="Sector to which the Project Belongs To ..."
+                                required>
+                        </div>
+                        
+                            <button type="submit"  name="submit" class="button" >submit</button>
+                        
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
